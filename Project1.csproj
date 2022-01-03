@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Project1.Kordused</StartupObject>
+    <StartupObject>Project1.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
