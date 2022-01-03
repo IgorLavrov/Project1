@@ -6,16 +6,24 @@ namespace Project1
 {
     class Kordused
     {
-       
+        static int Massivisuurus(int min,int max)
+        {
+            Random rnd = new Random();
+            int A = rnd.Next(min, max);
+            return A;
+
+        }
 
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            int A = rnd.Next(1,20);
+
+
+
+            int A = Massivisuurus(1, 20);
             int[] massiv = new int[A];
             int E;
             for (int i = 0; i < A; i++){
-                E = rnd.Next(0, 10);
+                E = Massivisuurus(1,10);
                 massiv[i] = E;
             }
 
@@ -26,7 +34,7 @@ namespace Project1
             Console.WriteLine();
             string[] abc = new string[5] { "A", "B", "C", "D", "E" };
 
-            int ind = rnd.Next(0, 4);
+            int ind = Massivisuurus(0,4);
             Console.WriteLine("Element indeksiga {0} on {1}",ind,abc[ind]);
 
             int n = abc.Length;
@@ -43,6 +51,33 @@ namespace Project1
                 Console.WriteLine(abc[j]);
                 j++;
             }
+
+            A = Massivisuurus(3, 12);
+            E = Massivisuurus(3, 12);
+            int [,]tabel=new int[A,E];
+            //int[,] tabel2 = new int[,] { };
+
+            for (int i = 0; i < A; i++)
+            {
+                for (j= 0; j < E; j++)
+                {
+                    tabel[i, j] = Massivisuurus(-10, 10);
+                }
+
+            }
+
+
+            for (int i = 0; i < A; i++)
+            {
+                for (j = 0; j < E; j++)
+                {
+                    Console.Write("{0,4}",tabel[i, j]);
+                }
+                Console.WriteLine();
+            }
+
+
+
 
             Console.ReadLine();
         }
