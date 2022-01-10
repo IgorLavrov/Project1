@@ -131,8 +131,8 @@ namespace Project1
             Console.WriteLine(" Enter symbol");
             char a = char.Parse(Console.ReadLine());
 
-           Alaprogramm.Nur(number, number2, a);*/
-
+           Alaprogramm.Nur(number, number2, a);
+            */
 
             Random rnd = new Random();
             float x = 10;

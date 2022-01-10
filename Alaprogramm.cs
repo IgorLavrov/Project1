@@ -100,6 +100,27 @@ namespace Project1
             return a * b;
         }
 
+        public static bool AnsControl(char t)
+        {
+            bool cont;
+            while(t != '+' && t != '/' && t != '-' && t != '*')
+            {
+                try
+                {
+                    t = Convert.ToChar(Console.ReadLine()[0]);
+
+                }catch(Exception e)
+                {
+                    Console.WriteLine($"Viga:{e.Message}");
+                }
+                Console.WriteLine("Viga:");
+                cont = false;
+
+            }
+            cont = true;
+            return cont;
+        }
+
         public static void Main(string[] args)
         {
             int x = 5;
