@@ -6,10 +6,8 @@ namespace Project1
 {
     class Alaprogramm
     {
-        public static int korruta (int a,int b)
-        {
-            return a * b;
-        }
+       
+
         public static float Keskmine(float a, float b)
         {
             float Kesk = (a + b) / 2;
@@ -84,7 +82,7 @@ namespace Project1
             {
                 vas = a * b;
             }
-            else { Console.WriteLine("Mistake")                    }
+            else { Console.WriteLine("Mistake");   }
 
             vastus = (int)vas;
 
@@ -94,15 +92,13 @@ namespace Project1
 
             }
             return vastus;
-
-
         }
 
 
-    }
-
-
-
+        public static int korruta(int a, int b)
+        {
+            return a * b;
+        }
 
         public static void Main(string[] args)
         {
@@ -111,9 +107,14 @@ namespace Project1
             int y = int.Parse(Console.ReadLine());
             int z = korruta(x, y);
             Console.WriteLine("{0}*{1}={2}", x, y, z);
-            Console.WriteLine(Korruta(4, 6));
+            Console.WriteLine(korruta(4, 6));
             Console.ReadLine();
         }
+
+
+
+    }
+
 
     }
 
