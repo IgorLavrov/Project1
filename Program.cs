@@ -100,7 +100,23 @@ namespace Project1
                 
 
         }
+        static int[,] korr = new int[10, 10];
 
+        static  void  Korrutustabel()
+        { 
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j=0; j < 10; j++)
+                { 
+                    // Console.Write("{0,4}", i * j);
+                    korr[i, j] = (i+1) * (j+1);
+                    Console.Write("{0,4}",korr[i, j]);       
+                }
+
+              
+               Console.WriteLine();
+            }
+        }
 
 
 
@@ -108,21 +124,23 @@ namespace Project1
 
         public static void Main(string[] args)
         {
-           /*
-            int[] array = Arv();
-            int keskimine = Keskimine(0, array);
-            int multipls = multiple(1, array);
-            summa = Summa(0, array);
+            /*
+             int[] array = Arv();
+             int keskimine = Keskimine(0, array);
+             int multipls = multiple(1, array);
+             summa = Summa(0, array);
 
-            Console.WriteLine("keskimine "+keskimine);
+             Console.WriteLine("keskimine "+keskimine);
 
-            Console.WriteLine("Multiple "+multipls);
+             Console.WriteLine("Multiple "+multipls);
 
-            Console.WriteLine("Summa "+summa);
-
-            Word();*/
-
-            Numbergame(generatenumber(0, 20));
+             Console.WriteLine("Summa "+summa);
+             Word();
+            
+             Numbergame(generatenumber(0, 20));
+            */
+            
+            Korrutustabel();
 
 
 
