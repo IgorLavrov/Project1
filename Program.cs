@@ -120,10 +120,28 @@ namespace Project1
 
 
 
-
+        static char[] tehed = new char[4] { '+', '-', '/', '*' };
 
         public static void Main(string[] args)
-        {
+        {/*
+            Console.WriteLine(" Enter first number");
+            int number = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Enter second number");
+            int number2 = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Enter symbol");
+            char a = char.Parse(Console.ReadLine());
+
+           Alaprogramm.Nur(number, number2, a);*/
+
+
+            Random rnd = new Random();
+            float x = 10;
+            float y = 3;
+            char tehe = tehed[rnd.Next(0, 3)];
+            int otvet = Alaprogramm.calculator(x, y, tehe);
+            Console.WriteLine(otvet);
+
+
             /*
              int[] array = Arv();
              int keskimine = Keskimine(0, array);
@@ -139,19 +157,20 @@ namespace Project1
             
              Numbergame(generatenumber(0, 20));
             */
-            
-            Korrutustabel();
 
+            // Korrutustabel();
 
+            /*
+            Console.WriteLine(Alaprogramm.Korruta(1, 3));
+             double a=Alaprogramm.Keskmine(1 ,2);
+            Console.WriteLine(a);
+            */
 
-            
-
-
-       //     foreach (var item in array)
-       //     {
-        //        summa += item;
-         //  }
-          //  Console.WriteLine("Summa ",summa);
+            //     foreach (var item in array)
+            //     {
+            //        summa += item;
+            //  }
+            //  Console.WriteLine("Summa ",summa);
 
 
 
